@@ -1,15 +1,15 @@
 # 1D_MPC_CBF
 
 ### Description
-The 1D_MPC_CBF repository houses a collection of MATLAB scripts written to study differnt state-constrained controllers. With a focus on a class of 1D dynamical systems, this collection of MATLAB scripts intends to compare and analyze the performance of different state-constrained controllers utilizing control barrier functions and model predictive control.
+The 1D_MPC_CBF repository houses a collection of MATLAB scripts written to study different state-constrained controllers. With a focus on a class of 1D dynamical systems, this collection of MATLAB scripts intends to compare and analyze the performance of different state-constrained controllers utilizing control barrier functions and model predictive control.
 
 #### Content
 
 The following state-constrained controllers are implemented and can be compared via separate time simulations:
 
-- **MPC controllers with classical state constraints
-- **MPC controllers with discrete control barrier functions
-- **Pointwise CLF-CBF-QP Controller
+- MPC controllers with classical state constraints
+- MPC controllers with discrete control barrier functions
+- Pointwise CLF-CBF-QP Controller
 
 After each simulation run, a plot with results is given out. An example of such a plot is given here:
 
@@ -18,16 +18,12 @@ After each simulation run, a plot with results is given out. An example of such 
 </p>
 
 
-## Dependencies
-
+### Dependencies
 The scripts use external libraries, which need to be installed.
-
-- **YAMLIP
-- **Export_fiq
-
+- YAMLIP
+- Export_fiq
 Further, the following MATLAB toolboxes are needed:
-
-- **Optimization Toolbox
+- Optimization Toolbox
 
 **The software was tested with MATLAB 2020b under Windows 11 Home.*-** 
 
