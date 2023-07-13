@@ -25,7 +25,7 @@ The scripts use external libraries, which need to be installed.
 Further, the following MATLAB toolboxes are needed:
 - Optimization Toolbox
 
-**The software was tested with MATLAB 2020b under Windows 11 Home.*-** 
+**The software was tested with MATLAB 2020b under Windows 11 Home.** 
 
 
 ### License
