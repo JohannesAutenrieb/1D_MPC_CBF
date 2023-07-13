@@ -32,12 +32,12 @@ Further, the following MATLAB toolboxes are needed:
 **The software was tested with MATLAB 2020b under Windows 11 Home.*-** 
 
 
-## License
+### License
 
 The contents of this repository are covered under the [MIT License](LICENSE).
 
 
-## References
+### References
 
 We kindly acknowledge the following papers, which have been the foundation of the here presented scripts:
 ----------
