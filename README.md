@@ -51,11 +51,14 @@ After each simulation run, a plot with results is given out. An example of such 
 
 
 ## Dependencies
+
 The scripts use external libraries, which need to be installed.
-- YAMLIP
-- Export_fiq
+* YAMLIP
+* Export_fiq
+
+
 Further, the following MATLAB toolboxes are needed:
-- Optimization Toolbox
+* Optimization Toolbox
 
 **The software was tested with MATLAB 2020b under Windows 11 Home.** 
 
