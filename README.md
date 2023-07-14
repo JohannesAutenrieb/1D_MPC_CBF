@@ -20,7 +20,7 @@ The following state-constrained controllers are implemented and can be compared 
    & \\Delta h\\left(x\_{t+k \\mid t}, u\_{t+k \\mid t}\\right) \\geq-\\gamma h\\left(x\_{t+k \\mid t}\\right), \\quad k=0, \\ldots, N-1 \\\\
   \\end{aligned}$$
 
-  
+### Integrated Controllers
 - MPC controllers with discrete control barrier functions
 
 
