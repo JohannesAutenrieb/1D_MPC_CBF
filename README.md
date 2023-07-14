@@ -19,19 +19,16 @@ $$\\begin{equation}
   
 with $h: \mathbf{R}^n \times \mathbf{R}^p \to \mathbf{R}$ being a  continuously differentiable function, called  control barrier function (CBF).
   
-<p align=right>
+<p align=center>
 <img src="https://github.com/JohannesAutenrieb/1D_MPC_CBF/blob/main/Images/CBF_Function_Plot.png" alt="CBF_Function_Plot" height=300px>
 </p>
   
-The CBF can ensure for the presented control affine system that for any initial condition $x_0 := x(t_0) \in \mathcal{C}$, that $x(t)$ stays within $\mathcal{C}$ for any $t$, if there exist class $\mathcal{K}$ functions $\alpha_1$, $\alpha_2$, $\alpha_3$ such that for all $x \in Int(\mathcal{C})$
+The CBF can ensure for the presented control affine system that for any initial condition $x_0 := x(t_0) \in \mathcal{C}$, that $x(t)$ stays within $\mathcal{C}$ for any $t$, if there exist class $\mathcal{K}$ functions $\alpha$ such that for all $x \in Int(\mathcal{C})$
 
-$$\\begin{equation}
-    \frac{1}{\alpha_1(h(x))} \leq B(x) \leq \frac{1}{\alpha_2(h(x))}
-\\end{equation}$$
-
-$$\\begin{equation}
-    \inf_{u \in U} [L_f B(x) + L_g B(x) u  - \alpha_3(h(x))] \leq 0
-\\end{equation}$$
+\begin{equation}
+    \label{RCBF_condition3}
+    \inf_{u \in U} [L_f B(x) + L_g B(x) u  - \alpha(h(x))] \leq 0
+\end{equation}
 
 ## Integrated Controllers
 
