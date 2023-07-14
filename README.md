@@ -7,7 +7,7 @@ The 1D_MPC_CBF repository houses a collection of MATLAB scripts written to study
 
 The following state-constrained controllers are implemented and can be compared via separate time simulations:
 
-- MPC controllers with classical state constraints
+MPC controllers with classical state constraints
 
 
   $$\\begin{aligned}
@@ -21,7 +21,7 @@ The following state-constrained controllers are implemented and can be compared 
   \\end{aligned}$$
 
 ### Integrated Controllers
-- MPC controllers with discrete control barrier functions
+MPC controllers with discrete control barrier functions
 
 
   $$\\begin{aligned}
