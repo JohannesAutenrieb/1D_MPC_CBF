@@ -5,10 +5,6 @@ The 1D_MPC_CBF repository houses a collection of MATLAB scripts written to study
 
 ## Problem formulation
 
-<p align=right>
-<img src="https://github.com/JohannesAutenrieb/1D_MPC_CBF/blob/main/Images/CBF_Function_Plot.png" alt="CBF_Function_Plot" height=100px>
-</p>
-
 We consider the following control affine system with unknown parameters:
 
 $$\\begin{equation}
@@ -23,9 +19,11 @@ $$\\begin{equation}
   
   With $h: \mathbf{R}^n \times \mathbf{R}^p \to \mathbf{R}$ being a  continuously differentiable function, called adaptive zeroing control barrier function (aZCBF).
   
-  \vspace{0.3cm}
+    <p align=right>
+    <img src="https://github.com/JohannesAutenrieb/1D_MPC_CBF/blob/main/Images/CBF_Function_Plot.png" alt="CBF_Function_Plot" height=300px>
+    </p>
   
-  $\Rightarrow$ \textbf{Goal of the aZCBF is to ensure for any initial condition $x_0 := x(t_0) \in \mathcal{C}$, that $x(t)$ stays within $\mathcal{C}$ for any $t$.}
+  $\Rightarrow$ 	**Goal of the ZCBF is to ensure for any initial condition $x_0 := x(t_0) \in \mathcal{C}$, that $x(t)$ stays within $\mathcal{C}$ for any $t$.**
 
 ## Integrated Controllers
 
