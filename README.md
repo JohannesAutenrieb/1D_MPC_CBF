@@ -3,6 +3,28 @@
 ## Description
 The 1D_MPC_CBF repository houses a collection of MATLAB scripts written to study different state-constrained controllers. With a focus on a class of 1D dynamical systems, this collection of MATLAB scripts intends to compare and analyze the performance of different state-constrained controllers utilizing control barrier functions and model predictive control.
 
+## Problem formulation
+
+We consider the following control affine system with unknown parameters:
+
+$$\\begin{equation}
+    \label{system_equation_2}
+    \dot{x}=f(x) + F(x)\theta + g(x)u
+$$\\end{equation}
+
+ A closed set $\mathcal{C} \in \mathbf{R}^n$, is defined in the following form:
+  
+  $$\\begin{equation}
+      \label{req_cbf_1}
+      \mathcal{C} = \{ x \in \mathbf{R}^n : h(x,\hat{\theta}) \geq 0 \}
+  $$\\end{equation}
+  
+  With $h: \mathbf{R}^n \times \mathbf{R}^p \to \mathbf{R}$ being a  continuously differentiable function, called adaptive zeroing control barrier function (aZCBF).
+  
+  \vspace{0.3cm}
+  
+  $\Rightarrow$ \textbf{Goal of the aZCBF is to ensure for any initial condition $x_0 := x(t_0) \in \mathcal{C}$, that $x(t)$ stays within $\mathcal{C}$ for any $t$.}
+
 ## Integrated Controllers
 
 The following state-constrained controllers are implemented and can be compared via separate time simulations:
