@@ -3,7 +3,7 @@
 ## Description
 The 1D_MPC_CBF repository houses a collection of MATLAB scripts written to study different state-constrained controllers. With a focus on a class of 1D dynamical systems, this collection of MATLAB scripts intends to compare and analyze the performance of different state-constrained controllers utilizing control barrier functions and model predictive control.
 
-## Problem formulation
+## Concept of Control Barrier Functions
 
 We consider the following control affine linear system:
 
