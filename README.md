@@ -46,10 +46,8 @@ $$\\begin{align}
 After each simulation run, a plot with results is given out. An example of such a plot is given here:
 
 <p align=center>
-<img src="[[https://github.com/JohannesAutenrieb/1D_MPC_CBF/blob/main/Images/Example_Simulation_Results.png](https://github.com/JohannesAutenrieb/1D_MPC_CBF/blob/main/Images/Example_Simulation_Results.png)" alt="Example_Plot" height=500px>
+<img src="https://github.com/JohannesAutenrieb/1D_MPC_CBF/blob/main/Images/Example_Simulation_Results.png" alt="MISSION_GUI" height=500px>
 </p>
-
-
 
 ## Dependencies
 
