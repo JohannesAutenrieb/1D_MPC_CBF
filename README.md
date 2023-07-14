@@ -5,8 +5,8 @@ The 1D_MPC_CBF repository houses a collection of MATLAB scripts written to study
 
 ## Problem formulation
 
-<p align=right width="200">
-<img src="https://github.com/JohannesAutenrieb/1D_MPC_CBF/blob/main/Images/CBF_Function_Plot.png" alt="CBF_Function_Plot" height=500px>
+<p align=right>
+<img src="https://github.com/JohannesAutenrieb/1D_MPC_CBF/blob/main/Images/CBF_Function_Plot.png" alt="CBF_Function_Plot" height=100px>
 </p>
 
 We consider the following control affine system with unknown parameters:
