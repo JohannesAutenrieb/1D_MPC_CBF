@@ -10,14 +10,14 @@ We consider the following control affine system with unknown parameters:
 $$\\begin{equation}
     \label{system_equation_2}
     \dot{x}=f(x) + F(x)\theta + g(x)u
-$$\\end{equation}
+\\end{equation}$$
 
  A closed set $\mathcal{C} \in \mathbf{R}^n$, is defined in the following form:
   
   $$\\begin{equation}
       \label{req_cbf_1}
       \mathcal{C} = \{ x \in \mathbf{R}^n : h(x,\hat{\theta}) \geq 0 \}
-  $$\\end{equation}
+  \\end{equation}$$
   
   With $h: \mathbf{R}^n \times \mathbf{R}^p \to \mathbf{R}$ being a  continuously differentiable function, called adaptive zeroing control barrier function (aZCBF).
   
