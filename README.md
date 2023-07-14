@@ -65,15 +65,21 @@ The following state-constrained controllers are implemented and can be compared 
    & x\_{t \\mid t}=x\_t,   \\\\
   \\end{aligned}$$
   
-### Pointwise CLF-CBF-QP Controller
+### Pointwise Controller and CBF-QP Safety Filter
+
+we defined a linear controller of the form 
+
+$$u_d = K_1 x + K_2 x_d
+\\end{align}$$
+
+The linear controller is tuned with regards to the desired control performance, but is alone not able to genearte safe commands. Therefore the following CLF-QP safety filter is used to adapt $u_d$ such that $x(t)$ stays within $\mathcal{C}$ for any $t$.
 
 $$\\begin{align}
 &\min_{u \in \mathcal{U}}
 \begin{aligned}[t]
-  &\frac{1}{2} u^T Q u + f^T u
+  &\|u - u_d\|_2
 \end{aligned} \\
 &\text{s.t.} \notag \\
-& L_f V(x) + L_g V(x)u + \epsilon V(x) - \delta \leq 0, \notag \\
 & L_f h(x) + L_g h(x)u - \gamma h(x) \leq 0, \notag
 \\end{align}$$
 
