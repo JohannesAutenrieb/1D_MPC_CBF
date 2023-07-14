@@ -5,25 +5,33 @@ The 1D_MPC_CBF repository houses a collection of MATLAB scripts written to study
 
 ## Problem formulation
 
-We consider the following control affine system with unknown parameters:
+We consider the following control affine linear system with unknown parameters:
 
 $$\\begin{equation}
-    \dot{x}=f(x) + F(x)\theta + g(x)u
+    \dot{x}= Ax + Bu
 \\end{equation}$$
 
- A closed set $\mathcal{C} \in \mathbf{R}^n$, is defined in the following form:
+ A closed set $\mathcal{C} \in \mathbf{R}^n$, which we consider as a safe set, is defined in the following form:
   
   $$\\begin{equation}
       \mathcal{C} = \{ x \in \mathbf{R}^n : h(x) \geq 0 \}
   \\end{equation}$$
   
-  With $h: \mathbf{R}^n \times \mathbf{R}^p \to \mathbf{R}$ being a  continuously differentiable function, called adaptive zeroing control barrier function (aZCBF).
+with $h: \mathbf{R}^n \times \mathbf{R}^p \to \mathbf{R}$ being a  continuously differentiable function, called  control barrier function (CBF).
   
 <p align=right>
 <img src="https://github.com/JohannesAutenrieb/1D_MPC_CBF/blob/main/Images/CBF_Function_Plot.png" alt="CBF_Function_Plot" height=300px>
 </p>
   
-  $\Rightarrow$ 	Goal of the ZCBF is to ensure for any initial condition $x_0 := x(t_0) \in \mathcal{C}$, that $x(t)$ stays within $\mathcal{C}$ for any $t$.
+The CBF can ensure for the presented control affine system that for any initial condition $x_0 := x(t_0) \in \mathcal{C}$, that $x(t)$ stays within $\mathcal{C}$ for any $t$, if there exist class $\mathcal{K}$ functions $\alpha_1$, $\alpha_2$, $\alpha_3$ such that for all $x \in Int(\mathcal{C})$
+
+$$\\begin{equation}
+    \frac{1}{\alpha_1(h(x))} \leq B(x) \leq \frac{1}{\alpha_2(h(x))}
+\\end{equation}$$
+
+$$\\begin{equation}
+    \inf_{u \in U} [L_f B(x) + L_g B(x) u  - \alpha_3(h(x))] \leq 0
+\\end{equation}$$
 
 ## Integrated Controllers
 
