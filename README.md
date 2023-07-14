@@ -25,10 +25,10 @@ with $h: \mathbf{R}^n \times \mathbf{R}^p \to \mathbf{R}$ being a  continuously 
   
 The CBF can ensure for the presented control affine system that for any initial condition $x_0 := x(t_0) \in \mathcal{C}$, that $x(t)$ stays within $\mathcal{C}$ for any $t$, if there exist class $\mathcal{K}$ functions $\alpha$ such that for all $x \in Int(\mathcal{C})$
 
-\begin{equation}
+$$\\begin{equation}
     \label{RCBF_condition3}
     \inf_{u \in U} [L_f B(x) + L_g B(x) u  - \alpha(h(x))] \leq 0
-\end{equation}
+\\end{equation}$$
 
 ## Integrated Controllers
 
