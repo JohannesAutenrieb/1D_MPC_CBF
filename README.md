@@ -23,12 +23,20 @@ with $h: \mathbf{R}^n \times \mathbf{R}^p \to \mathbf{R}$ being a  continuously 
 <img src="https://github.com/JohannesAutenrieb/1D_MPC_CBF/blob/main/Images/CBF_Function_Plot.png" alt="CBF_Function_Plot" height=300px>
 </p>
   
-The CBF can ensure for the presented control affine system that for any initial condition $x_0 := x(t_0) \in \mathcal{C}$, that $x(t)$ stays within $\mathcal{C}$ for any $t$, if there exist class $\mathcal{K}$ functions $\alpha$ such that for all $x \in Int(\mathcal{C})$
+The CBF can ensure for the presented control affine system that for any initial condition $x_0 := x(t_0) \in \mathcal{C}$, that $x(t)$ stays within $\mathcal{C}$ for any $t$, if there exists an extended class $\mathcal{K}$ functions $\alpha$ such that for all $x \in Int(\mathcal{C})$
 
 $$\\begin{equation}
     \label{RCBF_condition3}
-    \inf_{u \in U} [L_f B(x) + L_g B(x) u  - \alpha(h(x))] \leq 0
+    \suprem_{u \in U} [L_f B(x) + L_g B(x) u  - \alpha(h(x))] \leq 0
 \\end{equation}$$
+
+Where $\alpha(h(x)$ often chosen to be
+
+$$\\begin{equation}
+    \alpha(h(x)) = \gamma h(x)
+\\end{equation}$$
+
+with $\gamma$ being $\gamma > 0$. This leads to a convex problem when seeking barrier functions with numerical means.
 
 ## Integrated Controllers
 
