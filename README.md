@@ -67,7 +67,7 @@ The following state-constrained controllers are implemented and can be compared 
   
 ### Pointwise Controller and CBF-QP Safety Filter
 
-We defined a linear controller of the form. 
+A linear controller of the following form is defined:
 
 $$\\begin{align}
 u_d = K_1 x + K_2 x_d
