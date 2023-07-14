@@ -7,7 +7,7 @@ The 1D_MPC_CBF repository houses a collection of MATLAB scripts written to study
 
 The following state-constrained controllers are implemented and can be compared via separate time simulations:
 
-* MPC controllers with classical state constraints
+MPC controllers with classical state constraints
 
   $$\\begin{aligned}
   \\min\_{u_{t: t+N-1 \\mid t}} \\quad & \\frac{1}{2} x\_N^T P x_N+\\sum\_{k=0}^{N-1} \\frac{1}{2} x\_k^T Q x\_k+\\frac{1}{2} u_k^T R u\_k\\\\
@@ -19,7 +19,7 @@ The following state-constrained controllers are implemented and can be compared 
    & \\Delta h\\left(x\_{t+k \\mid t}, u\_{t+k \\mid t}\\right) \\geq-\\gamma h\\left(x\_{t+k \\mid t}\\right), \\quad k=0, \\ldots, N-1 \\\\
   \\end{aligned}$$
 
-* MPC controllers with discrete control barrier functions
+MPC controllers with discrete control barrier functions
 
 
   $$\\begin{aligned}
@@ -33,7 +33,7 @@ The following state-constrained controllers are implemented and can be compared 
   \\end{aligned}$$
 
   
-* Pointwise CLF-CBF-QP Controller
+Pointwise CLF-CBF-QP Controller
 
 After each simulation run, a plot with results is given out. An example of such a plot is given here:
 
