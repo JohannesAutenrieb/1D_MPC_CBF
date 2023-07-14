@@ -1,13 +1,13 @@
 # 1D_MPC_CBF
 
-### Description
+## Description
 The 1D_MPC_CBF repository houses a collection of MATLAB scripts written to study different state-constrained controllers. With a focus on a class of 1D dynamical systems, this collection of MATLAB scripts intends to compare and analyze the performance of different state-constrained controllers utilizing control barrier functions and model predictive control.
 
-### Integrated Controllers
+## Integrated Controllers
 
 The following state-constrained controllers are implemented and can be compared via separate time simulations:
 
-MPC controllers with classical state constraints
+### MPC controllers with classical state constraints
 
   $$\\begin{aligned}
   \\min\_{u_{t: t+N-1 \\mid t}} \\quad & \\frac{1}{2} x\_N^T P x_N+\\sum\_{k=0}^{N-1} \\frac{1}{2} x\_k^T Q x\_k+\\frac{1}{2} u_k^T R u\_k\\\\
@@ -19,7 +19,7 @@ MPC controllers with classical state constraints
    & \\Delta h\\left(x\_{t+k \\mid t}, u\_{t+k \\mid t}\\right) \\geq-\\gamma h\\left(x\_{t+k \\mid t}\\right), \\quad k=0, \\ldots, N-1 \\\\
   \\end{aligned}$$
 
-MPC controllers with discrete control barrier functions
+### MPC controllers with discrete control barrier functions
 
 
   $$\\begin{aligned}
@@ -34,8 +34,7 @@ MPC controllers with discrete control barrier functions
   
 
   
-Pointwise CLF-CBF-QP Controller
-
+### Pointwise CLF-CBF-QP Controller
 
 $$\\begin{align}
 &\min_{u \in \mathcal{U}}
@@ -54,7 +53,7 @@ After each simulation run, a plot with results is given out. An example of such 
 </p>
 
 
-### Dependencies
+## Dependencies
 The scripts use external libraries, which need to be installed.
 - YAMLIP
 - Export_fiq
@@ -64,12 +63,12 @@ Further, the following MATLAB toolboxes are needed:
 **The software was tested with MATLAB 2020b under Windows 11 Home.** 
 
 
-### License
+## License
 
 The contents of this repository are covered under the [MIT License](LICENSE).
 
 
-### References
+## References
 
 We kindly acknowledge the following papers, which have been the foundation of the here presented scripts:
 
