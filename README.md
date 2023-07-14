@@ -14,16 +14,16 @@ $$\\begin{equation}
  A closed set $\mathcal{C} \in \mathbf{R}^n$, is defined in the following form:
   
   $$\\begin{equation}
-      \mathcal{C} = \{ x \in \mathbf{R}^n : h(x,\hat{\theta}) \geq 0 \}
+      \mathcal{C} = \{ x \in \mathbf{R}^n : h(x) \geq 0 \}
   \\end{equation}$$
   
   With $h: \mathbf{R}^n \times \mathbf{R}^p \to \mathbf{R}$ being a  continuously differentiable function, called adaptive zeroing control barrier function (aZCBF).
   
-    <p align=right>
-    <img src="https://github.com/JohannesAutenrieb/1D_MPC_CBF/blob/main/Images/CBF_Function_Plot.png" alt="CBF_Function_Plot" height=300px>
-    </p>
+<p align=right>
+<img src="https://github.com/JohannesAutenrieb/1D_MPC_CBF/blob/main/Images/CBF_Function_Plot.png" alt="CBF_Function_Plot" height=300px>
+</p>
   
-  $\Rightarrow$ 	**Goal of the ZCBF is to ensure for any initial condition $x_0 := x(t_0) \in \mathcal{C}$, that $x(t)$ stays within $\mathcal{C}$ for any $t$.**
+  $\Rightarrow$ 	Goal of the ZCBF is to ensure for any initial condition $x_0 := x(t_0) \in \mathcal{C}$, that $x(t)$ stays within $\mathcal{C}$ for any $t$.
 
 ## Integrated Controllers
 
