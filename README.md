@@ -26,7 +26,7 @@ with $h: \mathbf{R}^n \times \mathbf{R}^p \to \mathbf{R}$ being a  continuously 
 The CBF can ensure for the presented control affine system that for any initial condition $x_0 := x(t_0) \in \mathcal{C}$, that $x(t)$ stays within $\mathcal{C}$ for any $t$, if there exists an extended class $\mathcal{K}$ functions $\alpha$ such that for all $x \in Int(\mathcal{C})$
 
 $$\\begin{equation}
-    \sup_{u \in U} [L_f B(x) + L_g B(x) u  - \alpha(h(x))] \geq 0
+    \sup_{u \in U} [L_f B(x) + L_g B(x) u  + \alpha(h(x))] \geq 0
 \\end{equation}$$
 
 Where $\alpha(h(x)$ often chosen to be
