@@ -35,7 +35,7 @@ $$\\begin{equation}
     \alpha(h(x)) = \gamma h(x)
 \\end{equation}$$
 
-with $\gamma$ being $\gamma > 0$. This leads to a convex problem when seeking barrier functions with numerical means.
+with $\gamma$ being $\gamma > 0$.
 
 ## Integrated Controllers
 
