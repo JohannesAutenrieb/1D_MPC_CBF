@@ -35,6 +35,14 @@ MPC controllers with discrete control barrier functions
   
 Pointwise CLF-CBF-QP Controller
 
+$$\\bbegin{argmini*}
+{u}{ \frac{1}{2} u^T Q u + f^T u}
+{}{}
+\addConstraint{ L_f V(x) + L_g V(x)u + \epsilon V(x) - \delta \leq 0}
+\addConstraint{ L_f h(x) + L_g h(x)u - \gamma h(x) \leq 0}
+\addConstraint{A_0 u \leq b_0}
+\\end{argmini*}$$
+
 After each simulation run, a plot with results is given out. An example of such a plot is given here:
 
 <p align=center>
