@@ -21,6 +21,7 @@ The following state-constrained controllers are implemented and can be compared 
   
 - MPC controllers with discrete control barrier functions
 
+
   $$\\begin{aligned}
   \\min\_{u_{t: t+N-1 \\mid t}} \\quad & \\frac{1}{2} x\_N^T P x_N+\\sum\_{k=0}^{N-1} \\frac{1}{2} x\_k^T Q x\_k+\\frac{1}{2} u_k^T R u\_k\\\\
   \\textrm{s.t.} \\quad 
@@ -30,6 +31,7 @@ The following state-constrained controllers are implemented and can be compared 
    & x\_{t \\mid t}=x\_t,   \\\\
    & \\Delta h\\left(x\_{t+k \\mid t}, u\_{t+k \\mid t}\\right) \\geq-\\gamma h\\left(x\_{t+k \\mid t}\\right), \\quad k=0, \\ldots, N-1 \\\\
   \\end{aligned}$$
+
   
 - Pointwise CLF-CBF-QP Controller
 
