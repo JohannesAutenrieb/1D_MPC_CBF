@@ -31,17 +31,21 @@ MPC controllers with discrete control barrier functions
    & x\_{t \\mid t}=x\_t,   \\\\
    & \\Delta h\\left(x\_{t+k \\mid t}, u\_{t+k \\mid t}\\right) \\geq-\\gamma h\\left(x\_{t+k \\mid t}\\right), \\quad k=0, \\ldots, N-1 \\\\
   \\end{aligned}$$
+  
 
   
 Pointwise CLF-CBF-QP Controller
 
-$$\\bbegin{argmini*}
-{u}{ \frac{1}{2} u^T Q u + f^T u}
-{}{}
-\addConstraint{ L_f V(x) + L_g V(x)u + \epsilon V(x) - \delta \leq 0}
-\addConstraint{ L_f h(x) + L_g h(x)u - \gamma h(x) \leq 0}
-\addConstraint{A_0 u \leq b_0}
-\\end{argmini*}$$
+
+$$\\begin{align}
+&\min_{u \in \mathcal{U}}
+\begin{aligned}[t]
+  &\frac{1}{2} u^T Q u + f^T u
+\end{aligned} \\
+&\text{s.t.} \notag \\
+& L_f V(x) + L_g V(x)u + \epsilon V(x) - \delta \leq 0, \notag \\
+& L_f h(x) + L_g h(x)u - \gamma h(x) \leq 0, \notag
+\\end{align}$$
 
 After each simulation run, a plot with results is given out. An example of such a plot is given here:
 
