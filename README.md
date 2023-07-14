@@ -5,7 +5,7 @@ The 1D_MPC_CBF repository houses a collection of MATLAB scripts written to study
 
 ## Problem formulation
 
-We consider the following control affine linear system with unknown parameters:
+We consider the following control affine linear system:
 
 $$\\begin{equation}
     \dot{x}= Ax + Bu
