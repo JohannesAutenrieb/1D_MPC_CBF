@@ -5,10 +5,10 @@ The 1D_MPC_CBF repository houses a collection of MATLAB scripts written to study
 
 ## Concept of Control Barrier Functions
 
-We consider the following control affine linear system:
+We consider the following control affine system:
 
 $$\\begin{equation}
-    \dot{x}= Ax + Bu
+    \dot{x}= f(x) + g(x)u
 \\end{equation}$$
 
  A closed set $\mathcal{C} \in \mathbf{R}^n$, which we consider as a safe set, is defined in the following form:
