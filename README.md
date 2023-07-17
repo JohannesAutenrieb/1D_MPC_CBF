@@ -94,7 +94,7 @@ After each simulation run, a plot with results is given out. An example of such 
 
 The scripts use external libraries, which need to be installed.
 * YAMLIP
-* Export_fiq
+* Export_fig
 
 
 Further, the following MATLAB toolboxes are needed:
